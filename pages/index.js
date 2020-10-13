@@ -11,6 +11,7 @@ const Index = ({ data }) => {
       }}
     >
       <h1>SocialLinks (Central de Links)</h1>
+      <img src={data.logo.url}/>
       <ul>
         {data.body.map(item => {
           if (item.slice_type === 'secao'){
