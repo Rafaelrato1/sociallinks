@@ -1,19 +1,21 @@
 import React, { useEffect } from 'react';
 import Prismic from 'prismic-javascript';
 import { useRouter } from 'next/router';
+import Head from'next/head';
 
 const RedirectTo = () => {
   const router = useRouter();
   useEffect(() => {
-    console.log("carregou");
     setTimeout(() => {
-      console.log("redireciona");
       router.push("/");
     }, 2000);
   });
   return (
-    <div>
-      <h1>URL não encontrada.</h1>
+    <div className='w-1/2 mx-auto text-center mt-8'>
+      <Head>
+        <title>Página não encontrada.</title>
+      </Head>
+      <h1 className='font-bold text-4xl'>URL não encontrada.</h1>
       <p>Estamos redirecionando você para a central de links.</p>
     </div>
   );
