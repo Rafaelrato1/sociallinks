@@ -46,7 +46,7 @@ const Index = ({ data }) => {
           })}
           <div className='py-4'>
             Projeto criado durante o evento Dev10k do <a href='https://devpleno.com'>DevPleno</a><br/>
-            Código-fonte disponível em: ...
+            Código-fonte disponível em: <a href='https://github.com/Rafaelrato1/sociallinks'>https://github.com/Rafaelrato1/sociallinks</a>
           </div>
       </div>
   </div>
